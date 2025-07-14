@@ -1,6 +1,6 @@
 """
 El País Opinion Articles Scraper – BrowserStack Version
-Author: Senior Web Scraping Engineer
+Author: Ridhi Moda
 """
 
 import os
@@ -38,9 +38,7 @@ from browserstack.local import Local
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
 
-# ------------------------------------------------------------------------------
-# YOUR ORIGINAL SCRAPER CLASS — unchanged from your local version
-# ------------------------------------------------------------------------------
+
 class ElPaisLocalScraper:
     """
     Local scraper for El País Opinion section
@@ -415,7 +413,7 @@ class ElPaisLocalScraper:
         return path
 
 # ------------------------------------------------------------------------------
-# BrowserStack + Local integration — surrounding your class
+# BrowserStack + Local integration 
 # ------------------------------------------------------------------------------
 BROWSERSTACK_USERNAME = os.getenv("BROWSERSTACK_USERNAME")
 BROWSERSTACK_ACCESS_KEY = os.getenv("BROWSERSTACK_ACCESS_KEY")
